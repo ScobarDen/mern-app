@@ -1,0 +1,23 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "Mern stack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScobarDen/mern-app.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "ScobarDen <gdv-ps@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScobarDen/mern-app/issues"
+  },
+  "homepage": "https://github.com/ScobarDen/mern-app#readme"
+}
