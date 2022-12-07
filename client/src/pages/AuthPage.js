@@ -2,7 +2,7 @@ import React from "react";
 
 const AuthPage = () => {
     return (
-        <div>
+        <div className="row">
             <h1>AuthPage</h1>
         </div>
     );
