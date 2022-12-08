@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 
 const AuthPage = () => {
+    const [form, setForm] = useState({
+        email: "", password: ""
+    });
+
     return (
         <div className="row">
             <div className="col s6 offset-s3">
@@ -11,11 +15,11 @@ const AuthPage = () => {
                         <div className="row">
                             <div className="input-field col s12">
                                 <input placeholder="Введите email..." id="email" type="text" className="validate color-input" name="email"/>
-                                <label htmlFor="email">Email</label>
+                                <label htmlFor="email" className="active">Email</label>
                             </div>
                             <div className="input-field col s12">
                                 <input placeholder="Введите пароль..." id="password" type="password" className="validate color-input" name="password"/>
-                                <label htmlFor="password">Пароль</label>
+                                <label htmlFor="password" className="active">Пароль</label>
                             </div>
                         </div>
                     </div>
