@@ -5,6 +5,10 @@ const AuthPage = () => {
         email: "", password: ""
     });
 
+    const changeHandler = event => {
+        setForm({...form, [event.target.name]: event.target.value});
+    }
+
     return (
         <div className="row">
             <div className="col s6 offset-s3">
@@ -14,11 +18,23 @@ const AuthPage = () => {
                         <span className="card-title">Авторизация</span>
                         <div className="row">
                             <div className="input-field col s12">
-                                <input placeholder="Введите email..." id="email" type="text" className="validate color-input" name="email"/>
+                                <input
+                                    placeholder="Введите email..."
+                                    id="email" type="text"
+                                    className="validate color-input"
+                                    name="email"
+                                    onChange={changeHandler}
+                                />
                                 <label htmlFor="email" className="active">Email</label>
                             </div>
                             <div className="input-field col s12">
-                                <input placeholder="Введите пароль..." id="password" type="password" className="validate color-input" name="password"/>
+                                <input placeholder="Введите пароль..."
+                                       id="password"
+                                       type="password"
+                                       className="validate color-input"
+                                       name="password"
+                                       onChange={changeHandler}
+                                />
                                 <label htmlFor="password" className="active">Пароль</label>
                             </div>
                         </div>
