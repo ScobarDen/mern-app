@@ -11,7 +11,7 @@ const DetailPage = () => {
     const getLink = useCallback(
         async () => {
             try {
-                const fetched = await request(`api/link/${linkId}`, 'GET', null, {
+                const fetched = await request(`/api/link/${linkId}`, 'GET', null, {
                     Authorization: `Bearer ${token}`
                 });
                 setLink(fetched);
