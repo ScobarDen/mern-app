@@ -1,4 +1,4 @@
-import {Router} from "express";
+const {Router} = require('express');
 const shortid = require("shortid");
 const config = require("config");
 const Link = require('../models/Link');

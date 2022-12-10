@@ -28,6 +28,7 @@ const CreatePage = () => {
                         id="link"
                         value={link}
                         onChange={e => setLink(e.target.value)}
+                        className="create-input"
                         onKeyUp={pressHandler}
                     />
                     <label htmlFor="email" className="active">Введите ссылку</label>

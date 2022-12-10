@@ -9,3 +9,13 @@ input.color-input {
 input.color-input + label {
     color: #fff!important;
 }
+
+input.create-input {
+    border-bottom: 1px solid #37474f!important;
+    box-shadow: 0 1px 0 0 #37474f!important;
+    color: #000!important;
+}
+
+input.create-input + label.active {
+    color: #37474f!important;
+}
