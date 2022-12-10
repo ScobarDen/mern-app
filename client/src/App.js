@@ -8,7 +8,7 @@ import {AuthContext} from "./context/AuthContext";
 function App() {
     const {login, logout, token, userId} = useAuth();
     const isAuthenticated = !!token;
-    const routes = useRoutes(isAuthenticated);
+    const routes = useRoutes(!!token); // TODO: если убрать StrictMode, то все работает
     return (
         <AuthContext.Provider value={{
             login,
