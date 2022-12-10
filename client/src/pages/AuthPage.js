@@ -51,6 +51,7 @@ const AuthPage = () => {
                                     id="email" type="text"
                                     className="validate color-input"
                                     name="email"
+                                    value={form.email}
                                     onChange={changeHandler}
                                 />
                                 <label htmlFor="email" className="active">Email</label>
@@ -61,6 +62,7 @@ const AuthPage = () => {
                                        type="password"
                                        className="validate color-input"
                                        name="password"
+                                       value={form.password}
                                        onChange={changeHandler}
                                 />
                                 <label htmlFor="password" className="active">Пароль</label>
