@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "jwtSecret": "denis scobar mern",
-  "mongoUri": "mongodb+srv://ScobarDen:Pleskava99@cluster0.ninyofo.mongodb.net/?retryWrites=true&w=majority"
+  "mongoUri": "mongodb+srv://ScobarDen:Pleskava99@cluster0.ninyofo.mongodb.net/?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
 }
