@@ -1,4 +1,5 @@
 # mern-app
+Приложение для сокращения ссылок с авторизацией.
 Fullstack app with stack: MongoDB, Express.js, React.js, Node.js
 
 На данный момент проект работает, но не залит на хостинг.
