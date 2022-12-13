@@ -2,6 +2,7 @@ import React, {useCallback, useContext, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {useHttp} from "../hooks/http.hook";
 import {AuthContext} from "../context/AuthContext";
+import LinkCard from "../components/LinkCard";
 
 const DetailPage = () => {
     const {token} = useContext(AuthContext);
@@ -28,9 +29,9 @@ const DetailPage = () => {
 
 
     return (
-        <div>
-            <h1>DetailPage</h1>
-        </div>
+        <>
+            {!loading && link && <LinkCard link={link} />}
+        </>
     );
 }
 

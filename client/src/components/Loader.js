@@ -1,15 +1,9 @@
 import React from 'react';
 
 const Loader = () => {
-    return(
-        <div className="progress"
-             style={{
-                 display: 'flex',
-                 justifyContent: 'center',
-                 alignItems: 'center',
-             }}
-        >
-            <div className="indeterminate"></div>
+    return (
+        <div className="spinner-border" role="status">
+            <span className="sr-only">Loading...</span>
         </div>
     );
 }
